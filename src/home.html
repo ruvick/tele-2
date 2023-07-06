@@ -9,6 +9,133 @@
 		@@include('html/_header.htm',{})
 		<main class="page">
 
+			<section class="slider-main">
+
+				<div class="slider-bg-wrap ">
+					<div class="slider-bg swiper">
+						<div class="swiper-wrapper">
+
+						<div class="slider-bg__slide swiper-slide" style="background-image: url('../img/main-banner.jpg')">
+							<div class="nuar_blk"></div>
+							<div class="slider-bg__container">
+								<div class="slider-bg__img">
+									<img src="@img/small-banner.png" alt="Маленький баннер слайдера">
+								</div>
+							</div>
+						</div>
+
+						<div class="slider-bg__slide swiper-slide" style="background-image: url('../img/banner-01.jpg')">
+							<div class="nuar_blk"></div>
+							<div class="slider-bg__container">
+								<div class="slider-bg__descp">
+								<h1 class="slider-bg__title">
+									увидеть крылатых охотников
+								</h1>
+								<p class="slider-bg__subtitle">
+									Тамбовская область, г. Мичуринск
+								</p>
+								<a href="#callback" class="slider-bg__link btn">Подробнее</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider-bg__slide swiper-slide" style="background-image: url('../img/banner-02.jpg')">
+							<div class="nuar_blk"></div>
+							<div class="slider-bg__container">
+								<div class="slider-bg__descp">
+								<h1 class="slider-bg__title">
+									Увидеть зубров и найти клад
+								</h1>
+								<p class="slider-bg__subtitle">
+									Орловская область, Хотынецкий район
+								</p>
+								<a href="#callback" class="slider-bg__link btn">Подробнее</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider-bg__slide swiper-slide" style="background-image: url('../img/banner-03.jpg')">
+							<div class="nuar_blk"></div>
+							<div class="slider-bg__container">
+								<div class="slider-bg__descp">
+								<h1 class="slider-bg__title">
+									Побывать в доме Козьмы руткова
+								</h1>
+								<p class="slider-bg__subtitle">
+									Брянская область, Почепский район
+								</p>
+								<a href="#callback" class="slider-bg__link btn">Подробнее</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider-bg__slide swiper-slide" style="background-image: url('../img/banner-04.jpg')">
+							<div class="nuar_blk"></div>
+							<div class="slider-bg__container">
+								<div class="slider-bg__descp">
+								<h1 class="slider-bg__title">
+									Встретить былинных богатырей и Змея Горыныча
+								</h1>
+								<p class="slider-bg__subtitle">
+									Липецкая область, Задонский район
+								</p>
+								<a href="#callback" class="slider-bg__link btn">Подробнее</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider-bg__slide swiper-slide" style="background-image: url('../img/banner-05.jpg')">
+							<div class="nuar_blk"></div>
+							<div class="slider-bg__container">
+								<div class="slider-bg__descp">
+								<h1 class="slider-bg__title">
+									Побывать в старинной крепости
+								</h1>
+								<p class="slider-bg__subtitle">
+									Белгородская область, Корочанский район
+								</p>
+								<a href="#callback" class="slider-bg__link btn">Подробнее</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider-bg__slide swiper-slide" style="background-image: url('../img/banner-06.jpg')">
+							<div class="nuar_blk"></div>
+							<div class="slider-bg__container">
+								<div class="slider-bg__descp">
+								<h1 class="slider-bg__title">
+									Попасть в фантастический блокбастер
+								</h1>
+								<p class="slider-bg__subtitle">
+									Воронежская область, Петропавловский район
+								</p>
+								<a href="#callback" class="slider-bg__link btn">Подробнее</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider-bg__slide swiper-slide" style="background-image: url('../img/banner-07.jpg')">
+							<div class="nuar_blk"></div>
+							<div class="slider-bg__container">
+								<div class="slider-bg__descp">
+								<h1 class="slider-bg__title">
+									Попасть в центр аномалии
+								</h1>
+								<p class="slider-bg__subtitle">
+									Курская область, г. Железногорск
+								</p>
+								<a href="#callback" class="slider-bg__link btn">Подробнее</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+					<!-- <div class="product-sl-paggination swiper-paggination"></div> -->
+				</div>
+
+			</section>
+
 				<section class="about section">
 					<div class="about__container">
 	
@@ -34,6 +161,53 @@
 								Гид по приключениям
 							</h2>
 						</div>
+
+						<div class="guide__switch-block switch-block">
+							<button type="button" class="switch-btn btn active">Выбрать город</button>
+							<button type="button" class="switch-btn btn">Выбрать маршрут</button>
+						</div>
+
+						<div data-tabs class="guide__tabs tabs">
+
+							<nav data-tabs-titles class="tabs__navigation">
+								<button type="button" class="tabs__title _tab-active">Все</button>
+								<button type="button" class="tabs__title">Белгород</button>
+								<button type="button" class="tabs__title">Брянск</button>
+								<button type="button" class="tabs__title">Воронеж</button>
+								<button type="button" class="tabs__title">Курск</button>
+								<button type="button" class="tabs__title">Липецк</button>
+								<button type="button" class="tabs__title">Орел</button>
+								<button type="button" class="tabs__title">Тамбов</button>
+							</nav>
+
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+									Содержимое первого таба
+								</div>
+								<div class="tabs__body">
+									Содержимое второго таба
+								</div>
+								<div class="tabs__body">
+									Содержимое третьего таба
+								</div>
+								<div class="tabs__body">
+									Содержимое первого таба
+								</div>
+								<div class="tabs__body">
+									Содержимое второго таба
+								</div>
+								<div class="tabs__body">
+									Содержимое третьего таба
+								</div>
+								<div class="tabs__body">
+									Содержимое второго таба
+								</div>
+								<div class="tabs__body">
+									Содержимое третьего таба
+								</div>
+							</div>
+
+						</div>
 	
 					</div>
 				</section>
@@ -43,6 +217,7 @@
 
 						<div class="text-block-wrapper d-flex">
 	
+							<div class="text-block-inner">
 							<div class="text-block">
 								<h2 class="coverage__title title">
 									Покрытие сети
@@ -53,6 +228,11 @@
 
 								<button type="button" class="coverage__btn btn">Смотреть карту</button>
 							</div>
+						</div>
+
+						<div class="coverage__img text-block-img">
+							<img src="@img/map-reg.svg" alt="Картинка блока">
+						</div>
 
 						</div>
 	
@@ -63,7 +243,6 @@
 					<div class="gifts__container">
 
 						<div class="text-block-wrapper d-flex">
-	
 							<div class="text-block">
 								<h2 class="gifts__title title">
 									Подарки и скидки
@@ -72,8 +251,64 @@
 									Воспользуйтесь специальными предложениями для абонентов Tele2 от наших партнеров
 								</div>
 							</div>
-
 						</div>
+
+						<div class="gifts-slider swiper">
+							<div class="swiper-wrapper">
+
+								<div class="gifts-slider__card swiper-slide">
+									<div class="gifts-slider__card-img">
+										<img src="@img/card-gifts/01.jpg" alt="Картинка карточки">
+									</div>
+									<div class="gifts-slider__card-body">
+										<div class="gifts-slider__card-title">
+											Скидка 10% на топливо в приложении «Турбо»
+										</div>
+										<button type="button" class="gifts-slider__card-btn btn">Подробнее</button>
+									</div>
+								</div>
+	
+								<div class="gifts-slider__card swiper-slide">
+									<div class="gifts-slider__card-img">
+										<img src="@img/card-gifts/02.jpg" alt="Картинка карточки">
+									</div>
+									<div class="gifts-slider__card-body">
+										<div class="gifts-slider__card-title">
+											Скидка 15% на прокат байдарок
+										</div>
+										<button type="button" class="gifts-slider__card-btn btn">Подробнее</button>
+									</div>
+								</div>
+	
+								<div class="gifts-slider__card swiper-slide">
+									<div class="gifts-slider__card-img">
+										<img src="@img/card-gifts/03.jpg" alt="Картинка карточки">
+									</div>
+									<div class="gifts-slider__card-body">
+										<div class="gifts-slider__card-title">
+											Скидка 25% на прокат сапбордов
+										</div>
+										<button type="button" class="gifts-slider__card-btn btn">Подробнее</button> 
+									</div>
+								</div>
+	
+								<div class="gifts-slider__card swiper-slide">
+									<div class="gifts-slider__card-img">
+										<img src="@img/card-gifts/04.jpg" alt="Картинка карточки">
+									</div>
+									<div class="gifts-slider__card-body">
+										<div class="gifts-slider__card-title">
+											Скидка 10% на экскурсию на сыроварню «Славный сыровар»
+										</div>
+										<button type="button" class="gifts-slider__card-btn btn">Подробнее</button>
+									</div>
+								</div>
+
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 	
 					</div>
 				</section>
@@ -83,6 +318,7 @@
 
 						<div class="text-block-wrapper d-flex">
 	
+							<div class="text-block-inner">
 							<div class="text-block">
 								<h2 class="mixx__title title">
 									Возьмите MIXX в дорогу
@@ -91,14 +327,19 @@
 									+50 ГБ, музыка, кино и книги в одной подписке. 
 									Подключить может абонент любого оператора.
 								</div>
-
-								<div class="text-block__row d-flex">
-									<button type="button" class="mixx__btn btn">Попробовать бесплатно</button>
-									<div class="text-block__button-text">
-										При первом подключении бесплатный пробный период, далее — от 250 ₽ в месяц
-									</div>
+							</div>
+							<div class="text-block__row d-flex">
+								<button type="button" class="mixx__btn btn">Попробовать бесплатно</button>
+								<div class="text-block__button-text">
+									При первом подключении бесплатный пробный период, далее — от 250 ₽ в месяц
 								</div>
 							</div>
+
+						</div>
+
+						<div class="mixx__img text-block-img">
+							<img src="img/mixx.png" alt="Картинка блока">
+						</div>
 							
 						</div>
 	

@@ -5,17 +5,20 @@
 	}
 	// .tabs__title
 	&__title {
-		border: 1px solid #eee;
-		padding: rem(10) rem(15);
-		border-radius: rem(5);
+		// font-family: Tele2 Display Serif;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 28px;
+		letter-spacing: 0em;
+		margin-right: 36px;
+		
 		&._tab-active {
-			border: 1px solid #000;
+			color: #FFAF0F;
 		}
 	}
 	// .tabs__content
 	&__content {
-		border: 1px solid #eee;
-		padding: rem(10) rem(15);
+		padding: 50px 0;
 	}
 	// .tabs__body
 	&__body {

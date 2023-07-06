@@ -154,6 +154,97 @@ body {
 @import "home";
 //========================================================================================================================================================
 
+.slider-bg-wrap {
+	position: relative;
+}
+
+.slider-bg {
+	background: grey;
+
+	&__container {
+    flex-direction: column;
+    position: relative;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+	}
+
+	&__slide {
+		position: relative;
+		width: 100%;
+		height: 805px;
+		padding: 187px 0;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: center !important;
+		// filter: blur(3px);
+	}
+
+	&__title {
+		// font-family: Standard CT Stencil;
+		font-size: 70px;
+		font-weight: 700;
+		line-height: 84px;
+		letter-spacing: -0.01em;
+		color: #fff;
+		margin-bottom: 60px;
+	}
+	&__subtitle {
+		// font-family: Tele2 DisplaySerif;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 28px;
+		letter-spacing: 0em;
+		color: #fff;
+	}
+}
+.slider-bg__descp {
+	max-width: 600px;
+	width: 100%;
+}
+.slider-bg__img {
+	position: absolute;
+	top: 0;
+	left: -160px;
+	max-width: 708px;
+	width: 100%;
+	height: 520px;
+	overflow: hidden;
+}
+
+.slider-bg__link {
+	padding: 19px 55px;
+	margin-top: 60px;
+}
+
+.swiper-button-block {
+	display: flex;
+	justify-content: space-between;
+	width: 130px;
+}
+
+.slider-bg__swiper-button-block {
+	display: block;
+	position: absolute;
+	right: 18%;
+	bottom: 14%;
+}
+
+.slider-bg__swiper-button-block ._container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-sl-paggination {
+	position: absolute;
+	left: 50%;
+	bottom: 2%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+//========================================================================================================================================================
 .about .text-block {
 	max-width: 742px;
 }
@@ -164,6 +255,55 @@ body {
 	background: url('../img/bg-yellow.png') no-repeat bottom right;
 	background-size: contain;
 }
+
+.gifts-slider {
+	margin: 0 -18px;
+}
+.gifts-slider__col {
+	display: flex;
+	flex: 0 1 25%;
+	padding: 0 18px;
+}
+.gifts-slider__card {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	background-color: #fff;
+	overflow: hidden;
+}
+.gifts-slider__card-img {
+	flex: 0 1 100%;
+	min-height: 252px;
+	max-height: 252px;
+	overflow: hidden;
+	// padding-bottom: 100%;
+}
+.gifts-slider__card-body {
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+	height: 100%;
+	background-color: #fff;
+}
+.gifts-slider__card-title {
+	// font-family: Tele2 Display Serif;
+	flex: 1 1 auto;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0em;
+	color: #1F2229;
+	margin-bottom: 28px;
+}
+.gifts-slider__card-btn {
+	// font-family: Tele2 TextSans Web SHORT;
+	font-size: 14px;
+	font-weight: 700;
+	color: #1F2229;
+	padding: 11px 23px;
+	border: 2px solid #1F2229;
+}
+
 //========================================================================================================================================================
 .mixx {
 		background: #FFAF0F;
@@ -178,6 +318,9 @@ body {
 .mixx__title,
 .mixx__subtitle {
 	color: #1F2229;
+}
+.mixx__img {
+	margin-bottom: -55px;
 }
 //========================================================================================================================================================
 .connect {
@@ -195,3 +338,34 @@ body {
 }
 //========================================================================================================================================================
 
+.guide__switch-block {
+	margin-bottom: 36px;
+}
+.switch-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 570px;
+	border: 2px solid #FFAF0F;
+	padding: 6.5px 7px 6.5px 7px;
+	border-radius: 40px;
+
+}
+.switch-btn {
+	min-width: 250px;
+	// font-family: Tele2 Display Serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 28px;
+	background: #1F2229;
+	border: none;
+}
+.switch-btn.active {
+	background-color: #FFAF0F;
+}
+//========================================================================================================================================================
+
+.coverage__img {
+	flex: 0 0 353px;
+  height: 254px;
+}

@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Autoplay, } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -46,7 +46,65 @@ function initSliders() {
 
 	// Перечень слайдеров
 	if (document.querySelector('.swiper')) {
-		new Swiper('.swiper', {
+		new Swiper('.slider-bg', {
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation, Autoplay],
+
+			// effect: 'fade',
+			// autoplay: {
+			// 	delay: 3000,
+			// 	disableOnInteraction: false,
+			// },
+
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			// autoHeight: true,
+			speed: 800,
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			//lazy: true,
+			// Dotts
+			//pagination: {
+			//	el: '.slider-quality__pagging',
+			//	clickable: true,
+			//},
+			// Arrows
+			navigation: {
+				nextEl: '.slider-info__button-next',
+				prevEl: '.slider-info__button-prev',
+			},
+			// breakpoints: {
+			// 	415: {
+			// 		slidesPerView: 1.8,
+			// 		spaceBetween: 10,
+			// 	},
+			// 	516: {
+			// 		slidesPerView: 2.6,
+			// 		spaceBetween: 10,
+			// 	},
+			// 	// 768: {
+			// 	// 	slidesPerView: 2,
+			// 	// 	spaceBetween: 20,
+			// 	// },
+			// 	1025: {
+			// 		slidesPerView: 3,
+			// 		spaceBetween: 20,
+			// 	},
+			// 	// 1268: {
+			// 	// 	slidesPerView: 4,
+			// 	// 	spaceBetween: 30,
+			// 	// },
+			// },
+			on: {
+
+			}
+		});
+		new Swiper('.gifts-slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
 			//modules: [Navigation, Pagination],
@@ -59,13 +117,13 @@ function initSliders() {
 			*/
 			observer: true,
 			observeParents: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
+			slidesPerView: 4,
+			spaceBetween: 36,
 			autoHeight: true,
 			speed: 800,
 			//touchRatio: 0,
 			//simulateTouch: false,
-			//loop: true,
+			loop: true,
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts
@@ -75,8 +133,8 @@ function initSliders() {
 			//},
 			// Arrows
 			navigation: {
-				nextEl: '.about__more .more__item_next',
-				prevEl: '.about__more .more__item_prev',
+				nextEl: '.about__more .more__item_nex',
+				prevEl: '.about__more .more__item_pre',
 			},
 			/*
 			breakpoints: {
