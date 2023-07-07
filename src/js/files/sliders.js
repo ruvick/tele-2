@@ -175,8 +175,8 @@ function initSliders() {
 			*/
 			observer: true,
 			observeParents: true,
-			slidesPerView: 4,
-			spaceBetween: 36,
+			slidesPerView: 1.2,
+			spaceBetween: 10,
 			autoHeight: true,
 			speed: 800,
 			//touchRatio: 0,
@@ -194,27 +194,35 @@ function initSliders() {
 				nextEl: '.about__more .more__item_nex',
 				prevEl: '.about__more .more__item_pre',
 			},
-			/*
 			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
+				375: {
+					slidesPerView: 1.4,
 				},
-				768: {
-					slidesPerView: 2,
+				414: {
+					slidesPerView: 1.6,
+				},
+				515: {
+					slidesPerView: 1.8,
+				},
+				540: {
+					slidesPerView: 2.2,
+				},
+				700: {
+					slidesPerView: 2.6,
+				},
+				812: {
+					slidesPerView: 3.2,
 					spaceBetween: 20,
 				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
+				1024: {
+					slidesPerView: 3.6,
+					spaceBetween: 26,
 				},
-				1268: {
+				1200: {
 					slidesPerView: 4,
-					spaceBetween: 30,
+					spaceBetween: 36,
 				},
 			},
-			*/
 			on: {
 
 			}
