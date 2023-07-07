@@ -141,6 +141,22 @@
 	}
 }
 
+@media (max-width: 700px) {
+	.coverage {
+		.text-block-wrapper {
+		flex-wrap: wrap;
+		}
+		.text-block-inner {
+			margin-right: 0;
+		}
+	}
+	.coverage__img {
+		flex: 0 1 353px;
+		height: auto;
+    margin-top: 25px;
+	}
+}
+
 @media (max-width: 612px) {
 	.popup__img {
 		flex: 0 1 43%;
