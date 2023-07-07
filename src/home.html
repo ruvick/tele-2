@@ -163,13 +163,13 @@
 						</div>
 
 						<div class="guide__switch-block switch-block">
-							<label type="button" class="switch-btn">
+							<label type="button" class="switch-btn" data-view="city">
 								<input class="switch-btn__input" checked type="radio" name="radio">
 									<span class="switch-btn__inner btn">
 										<span class="switch-btn__name">Выбрать город</span>
 								</span>
 							</label>
-							<label type="button" class="switch-btn">
+							<label type="button" class="switch-btn" data-view="route">
 								<input class="switch-btn__input" type="radio" name="radio">
 									<span class="switch-btn__inner btn">
 										<span class="switch-btn__name">Выбрать маршрут</span>
@@ -177,7 +177,7 @@
 							</label>
 						</div>
 
-						<div data-tabs class="guide__tabs tabs" style="display: none">
+						<div data-view="city" data-tabs class="guide__tabs tabs active">
 
 							<nav data-tabs-titles class="tabs__navigation">
 								<button type="button" class="tabs__title _tab-active">Все</button>
@@ -402,7 +402,7 @@
 
 						</div>
 
-						<div data-tabs class="guide__tabs tabs">
+						<div data-view="route" data-tabs class="guide__tabs tabs">
 
 							<nav data-tabs-titles class="tabs__navigation">
 								<button type="button" class="tabs__title _tab-active">Все</button>
