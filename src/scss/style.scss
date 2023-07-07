@@ -273,6 +273,9 @@ body {
 .image-guide__col--big {
 	flex: 0 1 66.67%;
 }
+.image-guide__col--average {
+	flex: 0 1 50%;
+}
 .image-guide__card-sticker {
 	position: absolute;
 	top: 12px;
@@ -437,6 +440,13 @@ body {
 	background: #FFAF0F;
 	border: none;
 }
+.guide__btn-block {
+	display: flex;
+	justify-content: center;
+}
+.guide__btn {
+}
+
 //========================================================================================================================================================
 
 .coverage__img {
