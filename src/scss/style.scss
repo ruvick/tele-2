@@ -9,12 +9,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;700&display=swap');
 //@import "fonts/fonts";
 
+@font-face {
+	font-family: "Tele2-TextSans-Web-SHORT";
+	src: url("../fonts/Tele2-TextSans-Web-SHORT.eot");
+	src: local("☺"), url("../fonts/Tele2-TextSans-Web-SHORT.woff") format("woff"), url("../fonts/Tele2-TextSans-Web-SHORT.ttf") format("truetype"),
+		url("../fonts/Tele2-TextSans-Web-SHORT.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Tele2 Display Serif";
+	src: url("../fonts/Tele2 Display Serif.eot");
+	src: local("☺"), url("../fonts/Tele2 Display Serif.woff") format("woff"), url("../fonts/Tele2 Display Serif.ttf") format("truetype"),
+		url("../fonts/Tele2 Display Serif.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Standard CT Stencil";
+	src: url("../fonts/Standard CT Stencil.eot");
+	src: local("☺"), url("../fonts/Standard CT Stencil.woff") format("woff"), url("../fonts/Standard CT Stencil.ttf") format("truetype"),
+		url("../fonts/Standard CT Stencil.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+
 // Подключение иконочных шрифтов ==============================================================================================================================================================================================================================================================================
 // Подключить если есть файл иконочного шрифта
 //@import "fonts/icons";
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: "Roboto";
+$fontFamily: "Tele2-TextSans-Web-SHORT", sans-serif;
 $fontSize: rem(20); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета

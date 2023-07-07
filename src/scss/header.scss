@@ -18,6 +18,7 @@
 
 .logo-icon {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	flex: 0 0 246px;
 	height: 33px;
@@ -36,12 +37,12 @@
 	}
 
 	&__text {
-		// font-family: 'Standard CT Stencil';
+		font-family: 'Standard CT Stencil', sans-serif;
 		font-size: 24px;
-		font-weight: 700;
+		font-weight: 700; 
 		line-height: 26px;
 		letter-spacing: -0.03em;
-		margin-left: 20px;
+		margin-left: 0px;
 	}
 }
 
@@ -53,6 +54,7 @@
 	justify-content: flex-end;
 	flex-wrap: wrap;
 	a {
+		font-family: 'Tele2 TextSans Web SHORT', sans-serif;
     display: block;
     font-size: 16px;
     font-weight: 700;
