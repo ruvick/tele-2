@@ -184,21 +184,17 @@
 
 // Боковое меню
 .mob-menu {
-	// visibility: hidden;
 	position: fixed;
 	z-index: 500;
-	top: 0;
-	right: -100%;
-	width: 50%;
-	height: 100%;
-	padding: 35px 10px 0px 20px;
-	// background: rgba(0, 0, 0, 0.8);
-	background: #fff;
+	top: -100%;
+	width: 100%;
+	padding: 35px 25px 35px 10px;
+	background: #FFAF0F;
 	box-shadow: 0px 3px 5px 0px black;
 	-webkit-transition: right 0.8s;
 	-o-transition: right 0.8s;
 	margin-top: 30px;
-	transition: right 0.8s;
+	transition: top 0.5s ease 0s;
 	overflow: auto;
 }
 
@@ -210,8 +206,7 @@
 }
 
 .mob-menu.active {
-	// visibility: visible;
-	right: 0%;
+	top: 0;
 }
 
 // Иконка мобильного телефона

@@ -93,16 +93,6 @@
 	}
 }
 
-@media (max-width: 700px) {
-	.mob-menu {
-		width: 100%;
-		right: -100%;
-		-webkit-transition: right 0.8s;
-		-o-transition: right 0.8s;
-		transition: right 0.8s;
-	}
-}
-
 @media (max-width: 612px) {
 	.popup__img {
 		flex: 0 1 43%;
