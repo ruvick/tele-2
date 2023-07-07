@@ -1,8 +1,8 @@
 //<Адаптив>===========================================================================================================================================
 @media (max-width: 1200px) {
-	._container {
-		padding: 0 10px;
-	}
+	// ._container {
+	// 	padding: 0 10px;
+	// }
 	.menu-list a {
     padding: 8px 10px 8px 10px;
 	}
@@ -53,33 +53,6 @@
 		display: none;
 	}
 
-	.header__search form {
-		max-height: 30px;
-	}
-
-	.header__contacts {
-		flex: 0 0 133px;
-		margin-left: auto;
-		margin-right: 15px;
-	}
-
-	.header__phone {
-		font-size: 18px;
-	}
-
-	.header__time-phone {
-		display: none;
-	}
-
-	.header__popup-link {
-		display: none;
-	}
-
-	.header__popup-link_mob {
-		display: flex;
-		margin-left: 0;
-	}
-
 	.section {
 		padding: 20px 0 !important;
 	}
@@ -90,6 +63,14 @@
 
 	::-webkit-scrollbar {
 		display: none;
+	}
+	.footer__row {
+    flex-wrap: wrap;
+	}
+	.footer__policy {
+		flex: 0 1 100%;
+    margin-right: 0px;
+		margin-bottom: 15px;
 	}
 }
 

@@ -10,11 +10,12 @@
 .footer__container {
 }
 .footer__row {
+	justify-content: space-between;
 	// flex-wrap: wrap;
 }
 .footer__policy {
 	flex: 0 1 575px;
-	margin-right: 192px;
+	margin-right: 50px;
 }
 .footer__copy {
 }
