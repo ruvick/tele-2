@@ -411,7 +411,7 @@ body {
 }
 .switch-block {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-between; 
 	align-items: center;
 	width: 570px;
 	border: 2px solid #FFAF0F;
@@ -420,6 +420,9 @@ body {
 
 }
 .switch-btn {
+	position: relative;
+}
+.switch-btn__inner {
 	min-width: 250px;
 	// font-family: Tele2 Display Serif;
 	font-size: 20px;
@@ -428,8 +431,11 @@ body {
 	background: #1F2229;
 	border: none;
 }
-.switch-btn.active {
-	background-color: #FFAF0F;
+.switch-btn__name {
+}
+.switch-btn input[type=radio]:checked+.switch-btn__inner {
+	background: #FFAF0F;
+	border: none;
 }
 //========================================================================================================================================================
 
@@ -437,3 +443,10 @@ body {
 	flex: 0 0 353px;
   height: 254px;
 }
+//========================================================================================================================================================
+
+
+//========================================================================================================================================================
+
+// АДАПТИВ ==========================================
+@import "media";

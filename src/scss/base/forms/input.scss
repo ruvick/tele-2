@@ -11,6 +11,15 @@ textarea {
 		outline: none;
 	}
 }
+input[type=radio] {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+}
 .input {
 	border-radius: 0 !important;
 	width: 100%;
