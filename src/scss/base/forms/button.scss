@@ -32,10 +32,11 @@
 	color: #fff;
 	border-radius: 30px;
 	border: 2px solid #fff;
-	// &:hover {
-	// 	color: #fff;
-	// 	background-color: #221F20;
-	// }
+	transition: all 0.3s ease 0s;
+	&:hover {
+    color: #626469;
+		border: 2px solid #626469;
+	}
 
 	&.fw {
 		width: 100%;

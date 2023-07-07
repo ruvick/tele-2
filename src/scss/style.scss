@@ -358,12 +358,19 @@ body {
 	height: 100%;
 	background-color: #fff;
 	overflow: hidden;
+	&:hover{
+		.gifts-slider__card-img {
+			filter: grayscale(0);
+		}
+	}
 }
 .gifts-slider__card-img {
 	flex: 0 1 100%;
 	min-height: 252px;
 	max-height: 252px;
 	overflow: hidden;
+	filter: grayscale(1);
+	transition: filter 0.3s ease 0s;
 	// padding-bottom: 100%;
 }
 .gifts-slider__card-body {
@@ -451,6 +458,11 @@ body {
 	line-height: 28px;
 	background: #1F2229;
 	border: none;
+	&:hover{
+		background: #1F2229;
+		border: none;
+		color: #fff;
+	}
 }
 .switch-btn__name {
 }
