@@ -34,6 +34,9 @@
 	}
 	.subtitle {
 		margin-bottom: 50px;
+		&:last-child{
+			margin-bottom: 0;
+		}
 	}
 }
 .text-block__row {
