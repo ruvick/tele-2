@@ -250,6 +250,74 @@ body {
 }
 //========================================================================================================================================================
 
+.guide__image-block {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -18px;
+}
+.image-guide__col {
+	display: flex;
+	flex: 0 1 33.2%;
+	padding: 0 18px 36px 18px;
+}
+.image-guide {
+}
+.image-guide__card {
+	flex: 0 1 100%;
+	position: relative;
+	height: 334px;
+	border-radius: 8px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.image-guide__col--big {
+	flex: 0 1 66.67%;
+}
+.image-guide__card-sticker {
+	position: absolute;
+	top: 12px;
+	right: 0;
+	display: flex;
+	align-items: center;
+	padding: 9px 25px 9px 15px;
+	background: #FFAF0F;
+	border-radius: 35px 0 0 35px;
+	svg {
+    flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+	}
+}
+.image-guide__card-sticker-title {
+	// font-family: Tele2 Display Serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: 0em;
+}
+.image-guide__card-img {
+	width: 100%;
+	height: 100%;
+}
+.image-guide__card-descp {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 25px;
+	max-width: 445px;
+	// font-family: Tele2 Display Serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: 0em;
+	transition: all 0.3s ease 0s;
+}
+.image-guide__card:hover .image-guide__card-descp {
+	background: #FFAF0F;
+}
+//========================================================================================================================================================
+
 .gifts {
 	min-height: 772px;
 	background: url('../img/bg-yellow.png') no-repeat bottom right;
