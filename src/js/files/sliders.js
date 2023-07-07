@@ -104,6 +104,64 @@ function initSliders() {
 
 			}
 		});
+		new Swiper('.card-page-sl', {
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation, Autoplay],
+
+			// effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			// autoHeight: true,
+			speed: 800,
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			//lazy: true,
+			// Dotts
+			//pagination: {
+			//	el: '.slider-quality__pagging',
+			//	clickable: true,
+			//},
+			// Arrows
+			navigation: {
+				nextEl: '.slider-info__button-next',
+				prevEl: '.slider-info__button-prev',
+			},
+			// breakpoints: {
+			// 	415: {
+			// 		slidesPerView: 1.8,
+			// 		spaceBetween: 10,
+			// 	},
+			// 	516: {
+			// 		slidesPerView: 2.6,
+			// 		spaceBetween: 10,
+			// 	},
+			// 	// 768: {
+			// 	// 	slidesPerView: 2,
+			// 	// 	spaceBetween: 20,
+			// 	// },
+			// 	1025: {
+			// 		slidesPerView: 3,
+			// 		spaceBetween: 20,
+			// 	},
+			// 	// 1268: {
+			// 	// 	slidesPerView: 4,
+			// 	// 	spaceBetween: 30,
+			// 	// },
+			// },
+			on: {
+
+			}
+		});
 		new Swiper('.gifts-slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
