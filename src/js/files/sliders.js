@@ -52,10 +52,10 @@ function initSliders() {
 			modules: [Navigation, Autoplay],
 
 			// effect: 'fade',
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
+			// autoplay: {
+			// 	delay: 3000,
+			// 	disableOnInteraction: false,
+			// },
 
 			observer: true,
 			observeParents: true,

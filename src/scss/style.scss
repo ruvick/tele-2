@@ -6,7 +6,6 @@
 // Подключение шрифтов ===========================================================================================================================================================================================================================================================================
 //&display=swap - добавить при подключении через плагин
 // Подключить если есть локальные файлы шрифтов
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;700&display=swap');
 //@import "fonts/fonts";
 
 @font-face {
@@ -79,6 +78,7 @@ $mobileSmall: em(479.98); // Телефоны S
 
 body {
 	background: #1F2229;
+
 	// Скролл заблокирован 
 	.lock & {
 		overflow: hidden;
@@ -106,9 +106,11 @@ body {
 		min-width: 0;
 	}
 }
+
 .section {
 	padding: 55px 0;
 }
+
 // Ограничивающий контейнер ======================================================================================================================================================================================================================
 
 /*
@@ -191,20 +193,20 @@ body {
 	background: grey;
 
 	&__container {
-    flex-direction: column;
-    position: relative;
-    z-index: 50;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    height: 100%;
+		flex-direction: column;
+		position: relative;
+		z-index: 50;
+		display: flex;
+		justify-content: center;
+		align-items: start;
+		height: 100%;
 	}
 
 	&__slide {
 		position: relative;
 		width: 100%;
 		height: 805px;
-		padding: 187px 0;
+		padding: 80px 0;
 		background-repeat: no-repeat !important;
 		background-size: cover !important;
 		background-position: center !important;
@@ -217,9 +219,11 @@ body {
 		font-weight: 700;
 		line-height: 84 / 70 *100%;
 		letter-spacing: -0.01em;
+		text-transform: uppercase;
 		color: #fff;
 		margin-bottom: 60px;
 	}
+
 	&__subtitle {
 		font-family: 'Tele2 DisplaySerif', sans-serif;
 		font-size: 24px;
@@ -229,18 +233,18 @@ body {
 		color: #fff;
 	}
 }
+
 .slider-bg__descp {
-	max-width: 600px;
+	max-width: 650px;
 	width: 100%;
 }
+
 .slider-bg__img {
-	position: absolute;
-	top: 0;
-	left: -160px;
 	max-width: 708px;
 	width: 100%;
 	height: 520px;
 	overflow: hidden;
+	transform: translate(-160px, 100px);
 }
 
 .slider-bg__link {
@@ -273,10 +277,12 @@ body {
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
 }
+
 //========================================================================================================================================================
 .about .text-block {
 	max-width: 742px;
 }
+
 //========================================================================================================================================================
 
 .guide__image-block {
@@ -284,13 +290,15 @@ body {
 	flex-wrap: wrap;
 	margin: 0 -18px;
 }
+
 .image-guide__col {
 	display: flex;
 	flex: 0 1 33.2%;
 	padding: 0 18px 36px 18px;
 }
-.image-guide {
-}
+
+.image-guide {}
+
 .image-guide__card {
 	flex: 0 1 100%;
 	position: relative;
@@ -299,12 +307,15 @@ body {
 	overflow: hidden;
 	cursor: pointer;
 }
+
 .image-guide__col--big {
 	flex: 0 1 66.67%;
 }
+
 .image-guide__col--average {
 	flex: 0 1 50%;
 }
+
 .image-guide__card-sticker {
 	position: absolute;
 	top: 12px;
@@ -314,13 +325,15 @@ body {
 	padding: 9px 25px 9px 15px;
 	background: #FFAF0F;
 	border-radius: 35px 0 0 35px;
+
 	svg {
-    flex: 0 0 20px;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+		flex: 0 0 20px;
+		width: 20px;
+		height: 20px;
+		margin-right: 5px;
 	}
 }
+
 .image-guide__card-sticker-title {
 	// font-family: Tele2 Display Serif;
 	font-size: 16px;
@@ -328,10 +341,12 @@ body {
 	line-height: 28px;
 	letter-spacing: 0em;
 }
+
 .image-guide__card-img {
 	width: 100%;
 	height: 100%;
 }
+
 .image-guide__card-descp {
 	position: absolute;
 	bottom: 0;
@@ -345,54 +360,65 @@ body {
 	line-height: 28px;
 	letter-spacing: 0em;
 	transition: all 0.3s ease 0s;
-	&::after{
+
+	&::after {
 		content: "";
-    position: absolute;
-    background: #FFAF0F;
-    opacity: .9;
-    bottom: 0;
-    left: -100%;
-    height: 80%;
-    width: 0;
-    clip-path: polygon(0 0, 90% 0%, 100% 100%, 0% 100%);
-    z-index: -1;
-    transition: .6s cubic-bezier(0, 0.17, 0.32, 0.89) all;
+		position: absolute;
+		background: #FFAF0F;
+		opacity: .9;
+		bottom: 0;
+		left: -100%;
+		height: 80%;
+		width: 0;
+		clip-path: polygon(0 0, 90% 0%, 100% 100%, 0% 100%);
+		z-index: -1;
+		transition: .6s cubic-bezier(0, 0.17, 0.32, 0.89) all;
 	}
 }
+
 .image-guide__card:hover .image-guide__card-descp:after {
 	left: 0;
 	bottom: 0;
 	height: 100%;
 	width: 100%;
 }
+
 //========================================================================================================================================================
 
 .gifts {
 	min-height: 772px;
 	background: url('../img/bg-yellow.png') no-repeat bottom right;
 	background-size: contain;
+
+	.text-block-wrapper {
+		margin-bottom: 87px;
+	}
 }
 
 .gifts-slider {
 	margin: 0 -18px;
 }
+
 .gifts-slider__col {
 	display: flex;
 	flex: 0 1 25%;
 	padding: 0 18px;
 }
+
 .gifts-slider__card {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	background-color: #fff;
 	overflow: hidden;
-	&:hover{
+
+	&:hover {
 		.gifts-slider__card-img {
 			filter: grayscale(0);
 		}
 	}
 }
+
 .gifts-slider__card-img {
 	flex: 0 1 100%;
 	min-height: 252px;
@@ -402,6 +428,7 @@ body {
 	transition: filter 0.3s ease 0s;
 	// padding-bottom: 100%;
 }
+
 .gifts-slider__card-body {
 	display: flex;
 	flex-direction: column;
@@ -409,6 +436,7 @@ body {
 	height: 100%;
 	background-color: #fff;
 }
+
 .gifts-slider__card-title {
 	// font-family: Tele2 Display Serif;
 	flex: 1 1 auto;
@@ -419,6 +447,7 @@ body {
 	color: #1F2229;
 	margin-bottom: 28px;
 }
+
 .gifts-slider__card-btn {
 	// font-family: Tele2 TextSans Web SHORT;
 	font-size: 14px;
@@ -430,44 +459,51 @@ body {
 
 //========================================================================================================================================================
 .mixx {
-		background: #FFAF0F;
+	background: #FFAF0F;
+
 	.text-block__button-text {
 		color: #1F2229;
 	}
+
 	.mixx__btn {
 		color: #1F2229;
 		border: 2px solid #1F2229;
 	}
 }
+
 .mixx__title,
 .mixx__subtitle {
 	color: #1F2229;
 }
+
 .mixx__img {
 	margin-bottom: -55px;
 }
+
 //========================================================================================================================================================
-.connect {
-}
-.section {
-}
-.connect__container {
-}
+.connect {}
+
+.section {}
+
+.connect__container {}
+
 .connect__title {
 	margin-bottom: 24px;
 }
-.connect__subtitle {
-}
-.connect__btn {
-}
+
+.connect__subtitle {}
+
+.connect__btn {}
+
 //========================================================================================================================================================
 
 .guide__switch-block {
 	margin-bottom: 36px;
 }
+
 .switch-block {
 	display: flex;
-	justify-content: space-between; 
+	justify-content: space-between;
 	align-items: center;
 	width: 570px;
 	border: 2px solid #FFAF0F;
@@ -475,10 +511,12 @@ body {
 	border-radius: 40px;
 
 }
+
 .switch-btn {
 	position: relative;
 	cursor: pointer;
 }
+
 .switch-btn__inner {
 	min-width: 250px;
 	// font-family: Tele2 Display Serif;
@@ -487,36 +525,47 @@ body {
 	line-height: 28px;
 	background: #1F2229;
 	border: none;
-	&:hover{
+
+	&:hover {
 		background: #1F2229;
 		border: none;
 		color: #fff;
 	}
 }
-.switch-btn__name {
-}
+
+.switch-btn__name {}
+
 .switch-btn input[type=radio]:checked+.switch-btn__inner {
 	background: #FFAF0F;
 	border: none;
 }
+
 .guide__btn-block {
 	display: flex;
 	justify-content: center;
 }
-.guide__btn {
-}
+
+.guide__btn {}
+
 .guide__tabs {
 	display: none;
 }
+
 .guide__tabs.active {
 	display: block;
 }
+
 //========================================================================================================================================================
 
 .coverage__img {
 	flex: 0 0 353px;
-  height: 254px;
+	height: 254px;
 }
+
+.coverage__btn {
+	margin-top: 50px;
+}
+
 //========================================================================================================================================================
 
 
