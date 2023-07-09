@@ -51,11 +51,11 @@ function initSliders() {
 			// для конкретного случая
 			modules: [Navigation, Autoplay, Pagination],
 
-			// effect: 'fade',
-			// autoplay: {
-			// 	delay: 3000,
-			// 	disableOnInteraction: false,
-			// },
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
 
 			observer: true,
 			observeParents: true,
