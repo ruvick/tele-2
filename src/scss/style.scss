@@ -420,9 +420,10 @@ body {
 }
 
 .gifts-slider__card-img {
-	flex: 0 1 100%;
-	min-height: 252px;
-	max-height: 252px;
+	// flex: 0 1 100%;
+	// min-height: 252px;
+	// max-height: 252px;
+	padding-bottom: 100%;
 	overflow: hidden;
 	filter: grayscale(1);
 	transition: filter 0.3s ease 0s;
