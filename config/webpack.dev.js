@@ -25,7 +25,7 @@ const config = {
 	],
 	output: {
 		path: `${paths.build}`,
-		filename: 'js/app.min.js',
+		filename: 'js/app.js',
 		publicPath: '/'
 	},
 	devServer: {
