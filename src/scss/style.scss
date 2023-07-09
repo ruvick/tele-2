@@ -600,6 +600,128 @@ body {
 
 //========================================================================================================================================================
 
+.card-page__player {}
+
+.player {
+	max-width: 373px;
+}
+
+.player__controls {
+	display: flex;
+	align-items: center;
+	font-family: 'Tele2 TextSans Web SHORT', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 0em;
+	margin-bottom: 20px;
+}
+
+.player__controls-audiogid {
+	display: flex;
+	align-items: center;
+	margin-right: 36px;
+
+	svg {
+		margin-right: 10px;
+	}
+}
+
+.player__controls-speed {}
+
+.player__controls-speed-name {}
+
+.player__controls-speed-btn {
+	margin-left: 10px;
+}
+
+
+// .player * {
+// 	display: inline-block;
+// 	vertical-align: middle;
+// 	background: none;
+// 	border: none;
+// 	font-size: x-large;
+// }
+
+.player audio {
+	display: none;
+}
+
+.player__navigations-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 14px 45px;
+	border-radius: 30px;
+	border: 2px solid #fff;
+	overflow: hidden;
+}
+
+// .player {
+// 	border: 2px solid #600a6f;
+// 	background: #e9defd;
+// 	width: max-content;
+// 	padding: 12px;
+// 	border-radius: 20px;
+// }
+
+.player input[type="range"] {
+	-webkit-appearance: none;
+	-webkit-appearance: none;
+	height: 4px;
+	border-radius: 2px;
+	background: #fff;
+	outline: none;
+	width: 203px;
+	// opacity: 0.7;
+	// -webkit-transition: .2s;
+	// transition: opacity .2s;
+}
+
+.player input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #FFAF0F;
+	cursor: pointer;
+	margin-left: -5px;
+}
+
+.player input[type="range"]::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #FFAF0F;
+	cursor: pointer;
+	margin-left: -5px;
+}
+
+#volume {
+	width: 40px;
+}
+
+.play-time {
+	font-family: 'Tele2 TextSans Web SHORT', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 0em;
+}
+
+.play-btn {
+	display: flex;
+	align-items: center;
+	height: 22px;
+	color: #FFAF0F;
+	cursor: pointer;
+}
+
+.none {
+	display: none;
+}
 
 //========================================================================================================================================================
 

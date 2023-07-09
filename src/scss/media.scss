@@ -381,6 +381,10 @@
 	.image-guide__card {
 		height: 150px;
 	}
+
+	.player__navigations-inner {
+		padding: 14px 30px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -416,10 +420,33 @@
 	.slider-bg__slide {
 		height: 300px;
 	}
+
+	.player__controls {
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+
+	.player__controls-audiogid {
+		margin-right: 15px;
+	}
+
+	.player input[type=range] {
+		width: 200px;
+	}
 }
 
 @media (max-width: 375px) {
 	.image-guide__card {
 		height: 200px;
+	}
+
+	.player input[type=range] {
+		width: 150px;
+	}
+}
+
+@media (max-width: 345px) {
+	.player input[type=range] {
+		width: 120px;
 	}
 }

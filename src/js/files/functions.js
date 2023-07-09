@@ -481,14 +481,14 @@ export function menuInit() {
 			bodyLockToggle();
 		});
 	}
-	window.addEventListener('click', e => { // при клике в любом месте окна браузера
-		const target = e.target // находим элемент, на котором был клик
-		if (!target.closest('.icon-menu') && !target.closest('.mob-menu')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-			iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
-			menuBody.classList.remove('active')
-			bodyUnlock();
-		}
-	})
+	// window.addEventListener('click', e => { // при клике в любом месте окна браузера
+	// 	const target = e.target // находим элемент, на котором был клик
+	// 	if (!target.closest('.icon-menu') && !target.closest('.mob-menu')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+	// 		iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
+	// 		menuBody.classList.remove('active')
+	// 		bodyUnlock();
+	// 	}
+	// })
 }
 export function menuOpen() {
 	bodyLock();
