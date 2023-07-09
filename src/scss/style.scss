@@ -320,6 +320,7 @@ body {
 	position: absolute;
 	top: 12px;
 	right: 0;
+	z-index: 5;
 	display: flex;
 	align-items: center;
 	padding: 9px 25px 9px 15px;
@@ -335,7 +336,7 @@ body {
 }
 
 .image-guide__card-sticker-title {
-	// font-family: Tele2 Display Serif;
+	font-family: "Tele2 Display Serif", sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 28px;
@@ -351,10 +352,10 @@ body {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	z-index: 5;
+	z-index: 15;
 	padding: 25px 55px 25px 25px;
-	// max-width: 445px;
-	// font-family: Tele2 Display Serif;
+	max-width: 330px;
+	font-family: "Tele2 Display Serif", sans-serif;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 28px;
@@ -395,10 +396,6 @@ body {
 	}
 }
 
-.gifts-slider {
-	margin: 0 -18px;
-}
-
 .gifts-slider__col {
 	display: flex;
 	flex: 0 1 25%;
@@ -433,13 +430,14 @@ body {
 .gifts-slider__card-body {
 	display: flex;
 	flex-direction: column;
-	padding: 24px;
+	align-items: start;
+	padding: 24px 20px;
 	height: 100%;
 	background-color: #fff;
 }
 
 .gifts-slider__card-title {
-	// font-family: Tele2 Display Serif;
+	font-family: "Tele2 Display Serif", sans-serif;
 	flex: 1 1 auto;
 	font-size: 16px;
 	font-weight: 700;
@@ -450,11 +448,11 @@ body {
 }
 
 .gifts-slider__card-btn {
-	// font-family: Tele2 TextSans Web SHORT;
+	font-family: 'Tele2-TextSans-Web-SHORT', sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	color: #1F2229;
-	padding: 11px 23px;
+	padding: 9.5px 23px;
 	border: 2px solid #1F2229;
 }
 
