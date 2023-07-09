@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation, Autoplay, } from 'swiper';
+import Swiper, { Navigation, Autoplay, Pagination, } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -49,7 +49,7 @@ function initSliders() {
 		new Swiper('.slider-bg', {
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation, Autoplay],
+			modules: [Navigation, Autoplay, Pagination],
 
 			// effect: 'fade',
 			// autoplay: {
@@ -69,14 +69,14 @@ function initSliders() {
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts
-			//pagination: {
-			//	el: '.slider-quality__pagging',
-			//	clickable: true,
-			//},
+			pagination: {
+				el: '.swiper-pagination-main',
+				clickable: true,
+			},
 			// Arrows
 			navigation: {
-				nextEl: '.slider-info__button-next',
-				prevEl: '.slider-info__button-prev',
+				nextEl: '.swiper-button-main-next',
+				prevEl: '.swiper-button-main-prev',
 			},
 			// breakpoints: {
 			// 	415: {
@@ -107,7 +107,7 @@ function initSliders() {
 		new Swiper('.card-page-sl', {
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation, Autoplay],
+			modules: [Pagination, Autoplay],
 
 			// effect: 'fade',
 			autoplay: {
@@ -127,15 +127,15 @@ function initSliders() {
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts
-			//pagination: {
-			//	el: '.slider-quality__pagging',
-			//	clickable: true,
-			//},
-			// Arrows
-			navigation: {
-				nextEl: '.slider-info__button-next',
-				prevEl: '.slider-info__button-prev',
+			pagination: {
+				el: '.swiper-pagination-card',
+				clickable: true,
 			},
+			// Arrows
+			// navigation: {
+			// 	nextEl: '.slider-info__button-next',
+			// 	prevEl: '.slider-info__button-prev',
+			// },
 			// breakpoints: {
 			// 	415: {
 			// 		slidesPerView: 1.8,
@@ -165,7 +165,7 @@ function initSliders() {
 		new Swiper('.gifts-slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
-			//modules: [Navigation, Pagination],
+			modules: [Navigation,],
 			/*
 			effect: 'fade',
 			autoplay: {
@@ -185,14 +185,14 @@ function initSliders() {
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts
-			//pagination: {
-			//	el: '.slider-quality__pagging',
-			//	clickable: true,
-			//},
+			// pagination: {
+			// 	el: '.swiper-pagination-main',
+			// 	// clickable: true,
+			// },
 			// Arrows
 			navigation: {
-				nextEl: '.about__more .more__item_nex',
-				prevEl: '.about__more .more__item_pre',
+				nextEl: '.swiper-button-gifts-next',
+				prevEl: '.swiper-button-gifts-prev',
 			},
 			breakpoints: {
 				375: {

@@ -188,6 +188,18 @@ body {
 
 .slider-bg-wrap {
 	position: relative;
+
+	.swiper-nuvigation {
+		width: auto;
+		left: 50%;
+		bottom: 2%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.swiper-pagination-bullets {
+		margin: 0 36px;
+	}
 }
 
 .slider-bg {
@@ -459,6 +471,20 @@ body {
 	color: #1F2229;
 	padding: 9.5px 23px;
 	border: 2px solid #1F2229;
+}
+
+.gifts-slider-wrapper {
+	.swiper-nuvigation {
+		bottom: 41%;
+	}
+
+	.swiper-button-next {
+		margin-left: -40px;
+	}
+
+	.swiper-button-prev {
+		margin-right: -40px;
+	}
 }
 
 //========================================================================================================================================================
