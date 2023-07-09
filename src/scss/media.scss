@@ -1,4 +1,16 @@
 //<Адаптив>===========================================================================================================================================
+@media (max-width: 1440px) {
+	.slider-bg__img {
+		transform: translate(-100px, 100px);
+	}
+}
+
+@media (max-width: 1330px) {
+	.slider-bg__img {
+		transform: translate(-50px, 100px);
+	}
+}
+
 @media (max-width: 1280px) {
 	.slider-bg__slide {
 		height: 650px;
@@ -11,6 +23,10 @@
 
 	.card-page .slider-bg__slide {
 		height: 500px;
+	}
+
+	.slider-bg__img {
+		transform: translate(0px, 0px);
 	}
 }
 
@@ -76,6 +92,11 @@
 		flex-wrap: nowrap;
 		width: auto;
 		overflow: auto;
+	}
+
+	.slider-bg__img {
+		width: auto;
+		height: auto;
 	}
 }
 
@@ -312,10 +333,10 @@
 }
 
 @media (max-width: 515px) {
-	.slider-bg__slide {
-		min-height: 250px;
-		padding: 150px 0 120px 0;
-	}
+	// .slider-bg__slide {
+	// 	min-height: 250px;
+	// 	padding: 150px 0 120px 0;
+	// }
 
 	.slider-bg__title {
 		font-size: 26px;

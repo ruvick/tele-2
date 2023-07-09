@@ -246,6 +246,10 @@ body {
 	height: 520px;
 	overflow: hidden;
 	transform: translate(-160px, 100px);
+
+	img {
+		object-fit: fill;
+	}
 }
 
 .slider-bg__link {
@@ -545,7 +549,9 @@ body {
 	justify-content: center;
 }
 
-.guide__btn {}
+.guide__btn {
+	margin-top: 50px;
+}
 
 .guide__tabs {
 	display: none;
