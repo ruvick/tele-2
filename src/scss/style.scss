@@ -652,7 +652,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 14px 45px;
+	padding: 14px 40px;
 	border-radius: 30px;
 	border: 2px solid #fff;
 	overflow: hidden;
@@ -714,9 +714,23 @@ body {
 .play-btn {
 	display: flex;
 	align-items: center;
-	height: 22px;
+	width: 18px;
+	height: 21px;
+	font-size: 25px;
 	color: #FFAF0F;
 	cursor: pointer;
+	margin-right: 11px;
+	// &::before{
+	// 	content:''; 
+	// 	float: left; 
+	// 	flex: 0 0 18px; 
+	// 	width: 18px;
+	// 	height: 21px; 
+	// 	background-size: 100%; 
+	// 	background-position: 0 0; 
+	// 	background-repeat: no-repeat; 
+	// 	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAxOCAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xLjAwMTQ3IDIuNDQ0MjFMMTUuODIwNSAxMUwxLjAwMTQ2IDE5LjU1NTdMMS4wMDE0NyAyLjQ0NDIxWiIgc3Ryb2tlPSIjRkZBRjBGIiBzdHJva2Utd2lkdGg9IjIiLz4NCjwvc3ZnPg0K');
+	// }
 }
 
 .none {

@@ -92,32 +92,33 @@ document.addEventListener("DOMContentLoaded", (e) => {
 		if (isPlaying) curTime.value = av.currentTime;
 	};
 	//функция для настройки громкости
-	volume.onchange = function () {
+	// volume.onchange = function () {
 
-		av.volume = volume.value / 10;
-	};
+	// 	av.volume = volume.value / 10;
+	// };
 	//функция для установки начала воспроизведения
 	curTime.onchange = function () {
 
 		av.pause(); av.currentTime = curTime.value; av.play();
 	};
 	//функция для вкл/выкл громкости
-	speaker.onclick = function () {
+	// speaker.onclick = function () {
 
-		if (volume.value == 0) {
-			volume.value = 10; av.volume = 1;
-		} else {
-			volume.value = 0; av.volume = 0;
-		}
-	};
+	// 	if (volume.value == 0) {
+	// 		volume.value = 10; av.volume = 1;
+	// 	} else {
+	// 		volume.value = 0; av.volume = 0;
+	// 	}
+	// };
 	//функция для play/pause и изображения кнопки воспроизведения
 	playBtn.addEventListener("click", (a) => {
 
 		if (isPlaying) {
 			av.pause();
 			isPlaying = false;
-			// playBtn.innerHTML = "►";
-			playBtn.innerHTML = '<svg width="18" height="22" viewBox="0 0 18 22" fill="none"><path d="M1.00147 2.44421L15.8205 11L1.00146 19.5557L1.00147 2.44421Z" stroke="#FFAF0F" stroke-width="2"/></svg>';
+			playBtn.innerHTML = "►";
+			// playBtn.style.display = "block";
+			// playBtn.innerHTML = '<svg width="18" height="22" viewBox="0 0 18 22" fill="none"><path d="M1.00147 2.44421L15.8205 11L1.00146 19.5557L1.00147 2.44421Z" stroke="#FFAF0F" stroke-width="2"/></svg>';
 		}
 		else {
 			av.play();
