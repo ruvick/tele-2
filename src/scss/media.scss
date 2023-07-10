@@ -135,7 +135,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
 	.header {
 		position: fixed;
 		width: 100%;
@@ -146,6 +146,12 @@
 	.logo-icon {
 		flex: 0 0 155px;
 		height: 20px;
+	}
+
+	.logo-icon svg  {
+		flex: 0 0 50px;
+		height: 20px;
+		margin-right: 3px;
 	}
 
 	.logo-icon:before {
