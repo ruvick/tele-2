@@ -101,7 +101,15 @@ function initSliders() {
 			// 	// },
 			// },
 			on: {
+				init() {
+					this.el.addEventListener('mouseenter', () => {
+						this.autoplay.stop();
+					});
 
+					this.el.addEventListener('mouseleave', () => {
+						this.autoplay.start();
+					});
+				}
 			}
 		});
 		new Swiper('.card-page-sl', {
@@ -159,7 +167,15 @@ function initSliders() {
 			// 	// },
 			// },
 			on: {
+				init() {
+					this.el.addEventListener('mouseenter', () => {
+						this.autoplay.stop();
+					});
 
+					this.el.addEventListener('mouseleave', () => {
+						this.autoplay.start();
+					});
+				}
 			}
 		});
 		new Swiper('.gifts-slider', {
@@ -181,7 +197,7 @@ function initSliders() {
 			speed: 800,
 			//touchRatio: 0,
 			//simulateTouch: false,
-			loop: true,
+			// loop: true,
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts

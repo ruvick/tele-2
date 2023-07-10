@@ -460,7 +460,9 @@ body.ie {
 }
 
 .swiper-button-prev {}
-
+.swiper-button-disabled {
+	opacity: 0;
+}
 // Dotts
 .swiper-pagination-bullets {
 	display: flex;
