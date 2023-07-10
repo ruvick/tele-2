@@ -69,7 +69,7 @@
 						<div class="card-page__player player">
 
 							<div class="player__controls">
-								<button type="button" class="player__controls-audiogid">
+								<div type="button" class="player__controls-audiogid">
 									<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M11 0.332031C4.95816 0.332031 0 5.24723 0 11.2891V16.4453C0 17.5115 0.867367 18.3789 1.93359 18.3789H2.57812V11.9336H1.93359C1.70655 11.9336 1.49166 11.9801 1.28906 12.0523V11.2891C1.28906 5.95784 5.66878 1.62109 11 1.62109C16.3312 1.62109 20.7109 5.95784 20.7109 11.2891V12.0523C20.5083 11.9801 20.2935 11.9336 20.0664 11.9336H19.4219V18.3789H20.0664C21.1326 18.3789 22 17.5115 22 16.4453V11.2891C22 5.24723 17.0418 0.332031 11 0.332031Z"
@@ -79,12 +79,23 @@
 											fill="#959595" />
 									</svg>
 									Аудиогид
-								</button>
+								</div>
 								<div class="player__controls-speed">
 									<span class="player__controls-speed-name">Скорость</span>
-									<button type="button" class="player__controls-speed-btn">x1</button>
-									<button type="button" class="player__controls-speed-btn">x1.5</button>
-									<button type="button" class="player__controls-speed-btn">x2</button>
+									<label class="player__controls-speed-btn">
+										<input checked class="speed-btnx1" type="radio" name="radio">
+											<span>x1</span>
+									</label>
+
+									<label class="player__controls-speed-btn">
+										<input class="speed-btnx1_5" type="radio" name="radio">
+											<span>x1.5</span>
+									</label>
+
+									<label class="player__controls-speed-btn">
+										<input class="speed-btnx2" type="radio" name="radio">
+											<span>x2</span>
+									</label>
 								</div>
 							</div>
 
@@ -94,17 +105,15 @@
 								<div class="player__navigations-inner">
 									<audio id="av-tag" controls>
 										<source src="img/audio/treck.mp3" type="audio/mp3">
-										<!-- Your browser does not support the audio element. -->
 									</audio>
 									<button class="play-btn">►</button>
 									<input id="cur-time" type="range" min="0" max="auto" step="0">
-									<div class="play-time">1:00</div>
+									<div class="play-time">02:00</div> 
 
 									<!-- <div class="none">
 										<div id="speaker">🔊</div>
 										<input id="volume" type="range" min="0" max="10">
 									</div> -->
-
 								</div>
 
 							</div>

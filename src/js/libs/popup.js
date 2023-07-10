@@ -311,3 +311,4 @@ export class Popup {
 		this.options.logging ? console.log(`[Попапос]: ${message}`) : null;
 	}
 }
+

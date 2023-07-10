@@ -632,17 +632,13 @@ body {
 .player__controls-speed-name {}
 
 .player__controls-speed-btn {
+	position: relative;
 	margin-left: 10px;
+	cursor: pointer;
 }
-
-
-// .player * {
-// 	display: inline-block;
-// 	vertical-align: middle;
-// 	background: none;
-// 	border: none;
-// 	font-size: x-large;
-// }
+.player__controls-speed-btn input[type=radio]:checked+span {
+	color: #FFAF0F;
+}
 
 .player audio {
 	display: none;
@@ -657,14 +653,6 @@ body {
 	border: 2px solid #fff;
 	overflow: hidden;
 }
-
-// .player {
-// 	border: 2px solid #600a6f;
-// 	background: #e9defd;
-// 	width: max-content;
-// 	padding: 12px;
-// 	border-radius: 20px;
-// }
 
 .player input[type="range"] {
 	-webkit-appearance: none;
