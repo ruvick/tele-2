@@ -67,6 +67,7 @@ var speedBtnX2 = document.querySelector('.speed-btnx2');
 // var speaker = document.getElementById("speaker");
 
 // Функции переключения скорости
+
 function getTimePart(time) {
 	var sec_num = time;
 	var hours = Math.floor(sec_num / 3600);
@@ -168,6 +169,7 @@ playBtn.addEventListener("click", (a) => {
 		av.pause();
 		isPlaying = false;
 		
+		playBtn.classList.remove('paused');
 		playBtn.innerHTML = "►"; // Убери как напишишь CSS
 		
 		// playBtn.style.display = "block";
@@ -176,7 +178,7 @@ playBtn.addEventListener("click", (a) => {
 	else {
 		av.play();
 		isPlaying = true;
-		playBtn.classList.toggle('paused');
+		playBtn.classList.add('paused');
 
 		playBtn.innerHTML = "❚❚"; // Убери как напишишь CSS
 	}
