@@ -109,6 +109,11 @@
 		width: auto;
 		height: auto;
 	}
+	.menu-list a:hover {
+		color: inherit;
+		border-radius: none;
+		background: none;
+	}
 }
 
 @media (max-width: 860px) {
@@ -175,9 +180,23 @@
 	.header__menu-block {
 		margin-right: 15px;
 	}
-
-	.header__menu-list {
-		display: none;
+		.header__menu-list {
+			position: absolute;
+			top: 40px;
+			left: 0;
+			width: 100%;
+			padding: 20px 0;
+			background: #FFAF0F;
+			flex-direction: column;
+			z-index: -1;
+			box-shadow: 0px 10px 22px -25px #000000 inset;
+			visibility: hidden;
+			opacity: 0;
+			transition: opacity 0.3s, visibility 0.3s;
+	}
+	.header__menu-list._active {
+		visibility: visible;
+		opacity: 1;
 	}
 
 	.section {

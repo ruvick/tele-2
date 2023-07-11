@@ -458,7 +458,7 @@ export function menuInit() {
 
 	const iconMenu = document.querySelector(".icon-menu");
 	const body = document.querySelector("body");
-	const menuBody = document.querySelector(".mob-menu");
+	const menuBody = document.querySelector(".header__menu-list");
 	const menuListItemElems = document.querySelector(".mob-menu__list");
 
 	if (iconMenu) {
@@ -466,7 +466,7 @@ export function menuInit() {
 			if (bodyLockStatus) {
 				iconMenu.classList.toggle("active");
 				body.classList.toggle("_lock");
-				menuBody.classList.toggle("active");
+				menuBody.classList.toggle("_active");
 				bodyLockToggle();
 				document.documentElement.classList.toggle("menu-open");
 			}
@@ -481,14 +481,14 @@ export function menuInit() {
 			bodyLockToggle();
 		});
 	}
-	// window.addEventListener('click', e => { // при клике в любом месте окна браузера
-	// 	const target = e.target // находим элемент, на котором был клик
-	// 	if (!target.closest('.icon-menu') && !target.closest('.mob-menu')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-	// 		iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
-	// 		menuBody.classList.remove('active')
-	// 		bodyUnlock();
-	// 	}
-	// })
+	window.addEventListener('click', e => { // при клике в любом месте окна браузера
+		const target = e.target // находим элемент, на котором был клик
+		if (!target.closest('.icon-menu') && !target.closest('.mob-menu')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+			iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
+			menuBody.classList.remove('_active')
+			bodyUnlock();
+		}
+	})
 }
 export function menuOpen() {
 	bodyLock();
