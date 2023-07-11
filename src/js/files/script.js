@@ -83,21 +83,21 @@ function getTimePart(time) {
 	}
 	if (seconds < 10) { seconds = "0" + seconds; }
 
-	return  {"minutes":minutes, "seconds":seconds}
+	return { "minutes": minutes, "seconds": seconds }
 }
 
 function audioTimeUpdate() {
 
-	 let cur_rez_minus = getTimePart(parseFloat(av.duration)-parseFloat(av.currentTime))
+	let cur_rez_minus = getTimePart(parseFloat(av.duration) - parseFloat(av.currentTime))
 
-	playTime.innerHTML = "-"+cur_rez_minus.minutes + ':' + cur_rez_minus.seconds;
+	playTime.innerHTML = "-" + cur_rez_minus.minutes + ':' + cur_rez_minus.seconds;
 	if (isPlaying) curTime.value = av.currentTime;
 }
 
 function audioTimeInit() {
 	let rez = getTimePart(av.duration)
-	
-	playTime.innerHTML = "-"+rez.minutes + ':' + rez.seconds;
+
+	playTime.innerHTML = "-" + rez.minutes + ':' + rez.seconds;
 	curTime.value = 0;
 }
 
@@ -168,10 +168,10 @@ playBtn.addEventListener("click", (a) => {
 	if (isPlaying) {
 		av.pause();
 		isPlaying = false;
-		
+
 		playBtn.classList.remove('paused');
-		playBtn.innerHTML = "►"; // Убери как напишишь CSS
-		
+		// playBtn.innerHTML = "►"; // Убери как напишишь CSS
+
 		// playBtn.style.display = "block";
 		// playBtn.innerHTML = '<svg width="18" height="22" viewBox="0 0 18 22" fill="none"><path d="M1.00147 2.44421L15.8205 11L1.00146 19.5557L1.00147 2.44421Z" stroke="#FFAF0F" stroke-width="2"/></svg>';
 	}
@@ -180,7 +180,7 @@ playBtn.addEventListener("click", (a) => {
 		isPlaying = true;
 		playBtn.classList.add('paused');
 
-		playBtn.innerHTML = "❚❚"; // Убери как напишишь CSS
+		// playBtn.innerHTML = "❚❚"; // Убери как напишишь CSS
 	}
 
 });

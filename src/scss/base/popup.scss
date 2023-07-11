@@ -85,6 +85,11 @@ body.popup-show::after {
 	}
 }
 
+.card-page::-webkit-scrollbar,
+.card-page::-webkit-scrollbar-thumb {
+	display: none;
+}
+
 .card-page__header {
 	display: flex;
 	justify-content: flex-end;
