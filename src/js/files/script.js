@@ -55,7 +55,6 @@ smotScrollElems.forEach(link => {
 	})
 });
 // Аудиоплеер =========================================================================================================================================================================
-var audio = document.getElementById("audio");
 var av = document.getElementById("av-tag");
 var playTime = document.getElementsByClassName("play-time")[0];
 var playBtn = document.getElementsByClassName("play-btn")[0];
@@ -63,11 +62,8 @@ var curTime = document.getElementById("cur-time");
 var speedBtnX1 = document.querySelector('.speed-btnx1');
 var speedBtnX1_5 = document.querySelector('.speed-btnx1_5');
 var speedBtnX2 = document.querySelector('.speed-btnx2');
-// var volume = document.getElementById("volume");
-// var speaker = document.getElementById("speaker");
 
-// Функции переключения скорости
-
+// Отображение времени
 function getTimePart(time) {
 	var sec_num = time;
 	var hours = Math.floor(sec_num / 3600);
@@ -144,43 +140,24 @@ av.ontimeupdate = function () {
 	audioTimeUpdate()
 
 };
-//функция для настройки громкости
-// volume.onchange = function () {
 
-// 	av.volume = volume.value / 10;
-// };
 //функция для установки начала воспроизведения
 curTime.onchange = function () {
 	av.pause(); av.currentTime = curTime.value; av.play();
 };
-//функция для вкл/выкл громкости
-// speaker.onclick = function () {
 
-// 	if (volume.value == 0) {
-// 		volume.value = 10; av.volume = 1;
-// 	} else {
-// 		volume.value = 0; av.volume = 0;
-// 	}
-// };
 //функция для play/pause и изображения кнопки воспроизведения
 playBtn.addEventListener("click", (a) => {
 
 	if (isPlaying) {
 		av.pause();
 		isPlaying = false;
-
 		playBtn.classList.remove('paused');
-		// playBtn.innerHTML = "►"; // Убери как напишишь CSS
-
-		// playBtn.style.display = "block";
-		// playBtn.innerHTML = '<svg width="18" height="22" viewBox="0 0 18 22" fill="none"><path d="M1.00147 2.44421L15.8205 11L1.00146 19.5557L1.00147 2.44421Z" stroke="#FFAF0F" stroke-width="2"/></svg>';
 	}
 	else {
 		av.play();
 		isPlaying = true;
 		playBtn.classList.add('paused');
-
-		// playBtn.innerHTML = "❚❚"; // Убери как напишишь CSS
 	}
 
 });
