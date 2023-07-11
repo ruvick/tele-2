@@ -483,7 +483,7 @@ export function menuInit() {
 	}
 	window.addEventListener('click', e => { // при клике в любом месте окна браузера
 		const target = e.target // находим элемент, на котором был клик
-		if (!target.closest('.icon-menu') && !target.closest('.mob-menu')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+		if (!target.closest('.icon-menu') && !target.closest('.mob-menu') && !target.closest('.card-page')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
 			iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
 			menuBody.classList.remove('_active')
 			bodyUnlock();
